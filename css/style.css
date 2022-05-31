@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    color: white;
+    background-image: url(https://kleeventos.com.br/wp-content/uploads/2019/11/AdobeStock_100250075-1030x687.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    
+}
+
+header {
+    grid-area: header;
+}
+
+.navBar {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.navBar .logo {
+
+    width: 80px;
+    height: 80px;
+}
+
+.navBar .menu {
+    grid-column: 4/7;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar.menu li {
+    list-style-type: none;
+}
+
+.navBar .menu a {
+    text-decoration: none;
+    color:white;
+}
+
+ 
+
+main {
+    grid-area: main;
+    height: 100vh;
+}
+
+.texto {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto h2 {
+    font-family: 'Koulen', cursive;
+    font-stretch: normal;
+    padding: 10px;
+    font-size: 6em;
+    color:rgba(141, 1, 1, 0.9);
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+}
+
+
+
+.tituloServicios h1{
+    font-size: 5em;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.servicios{
+    background-color: black;
+}
+.container{
+    color: black;
+}

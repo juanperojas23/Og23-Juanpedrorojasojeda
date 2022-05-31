@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-image:url(https://kleeventos.com.br/wp-content/uploads/2019/11/AdobeStock_100250075-1030x687.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";}
+    header{
+        grid-area: header;
+    }
+
+.navBar {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.navBar .logo {
+
+    width: 80px;
+    height: 80px;
+}
+
+.navBar .menu {
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column: 4/7;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navBar.menu li {
+    list-style-type: none;
+}
+
+.navBar .menu a {
+    text-decoration: none;
+    color: white;
+}
+main{
+    grid-area: main;
+    margin: 50px;
+    background-color:rgba(10,10,10, 0.7);
+    display: grid;
+    
+    grid-template-areas: 
+    "titulo"
+    "titulo2"
+    "dato1"
+    "dato2"
+    "formulario";
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.titulo{
+    grid-area: titulo;
+    font-family: 'Koulen', cursive;
+    
+}
+.titulo2{
+    grid-area: titulo2;
+   
+}
+.dato1 li{
+    grid-area: dato1;
+    display: grid;
+    
+    
+} 
+.dato2{
+    grid-area: dato2;
+}
+.formulario{
+    grid-area: formulario;
+}
+main li{
+    list-style-type: none;
+}
+@media only screen and(max-width: 320px) {
+    .navBar.menu{
+        grid-column: 2/8;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    
+}

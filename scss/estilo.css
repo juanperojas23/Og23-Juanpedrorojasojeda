@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+}
+
+header nav ul li {
+  padding: 10px;
+}
+
+.titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.titulo h1 {
+  color: #dfcc21;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 6rem;
+}
+
+.titulo a {
+  text-decoration: none;
+  color: #dfcc21;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.tituloServicios h1 {
+  color: #dfcc21;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 6rem;
+  margin: 50px;
+}
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,53 @@
+$colorText:rgb(223, 204, 33);
+body {
+    background-color: black;
+}
+
+header {
+    nav {
+        ul {
+            li {
+                padding: 10px;
+            }
+        }
+
+
+    }
+}
+
+
+
+
+.titulo { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+
+    color: $colorText;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 6rem;
+    }
+
+    a { text-decoration: none;
+        color:$colorText ;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    }
+}
+
+
+.tituloServicios{
+    h1{
+        color:$colorText;
+        text-align: center;
+        justify-content: center;
+        font-size: 6rem;
+        margin: 50px;
+    }
+}

@@ -1,9 +1,6 @@
+
 body {
   background-color: black;
-}
-
-header nav ul li {
-  padding: 10px;
 }
 
 .titulo {
@@ -21,9 +18,11 @@ header nav ul li {
   font-size: 6rem;
 }
 
-.titulo a {
-  text-decoration: none;
-  color: #dfcc21;
+.titulo ul {
+  list-style-type: none;
+}
+
+.titulo ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,6 +30,13 @@ header nav ul li {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.titulo ul li a {
+  text-decoration: none;
+  color: black;
+  background: #dfcc21;
+  padding: 10px;
 }
 
 .tituloServicios h1 {

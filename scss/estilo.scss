@@ -7,6 +7,7 @@ $colorText: rgb(223, 204, 33);
     font-family: 'Oswald', sans-serif;
     color: $colorText;
 }
+<<<<<<< HEAD
 
 @mixin lists {
     list-style-type: none;
@@ -47,13 +48,60 @@ body {
     display: flex;
     justify-content: center;
 
+=======
+
+@mixin lists {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 }
 
+header {
+    nav {
+        ul {
+            li {
+                padding: 15px;
+            }
+        }
+
+
+    }
+>>>>>>> paginacontacto
+}
+.presentacion{
+    margin: 20px;
+    
+    color: white;
+}
+body{
+    background-color: black
+    
+}
+
+<<<<<<< HEAD
 .video {
     display: flex;
     justify-content: center;
 }
 
+=======
+.tituloVideo{
+    display: flex;
+    justify-content: center;
+    
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+>>>>>>> paginacontacto
 .tituloServicios {
     h1 {
         @include fonts;

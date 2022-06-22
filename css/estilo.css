@@ -1,33 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Roboto+Flex:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Oswald&family=Roboto+Flex:opsz,wght@8..144,100&display=swap");
-@import url(header.scss);
+@import url(_header.scss);
+header nav ul li {
+  padding: 15px; }
+
+.presentacion {
+  margin: 20px;
+  color: white; }
+
 body {
   background-color: black; }
 
+.tituloVideo {
+  display: flex;
+  justify-content: center; }
 
-
-.titulo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-  .titulo h1 {
-    font-family: 'Anton', sans-serif;
-    color: #dfcc21;
-    line-height: 1.5em;
-    text-align: center;
-    font-size: 6rem; }
-  .titulo ul {
-    list-style-type: none; }
-    .titulo ul li {
-      display: flex;
-      justify-content: center;
-      text-align: center; }
-      .titulo ul li a {
-        text-decoration: none;
-        color: black;
-        background: #dfcc21;
-        padding: 10px; }
+.video {
+  display: flex;
+  justify-content: center; }
 
 .tituloServicios h1 {
   font-family: 'Oswald', sans-serif;
@@ -36,3 +26,32 @@ body {
   justify-content: center;
   font-size: 6rem;
   margin: 50px; }
+
+.tituloContacto h1 {
+  color: #dfcc21;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 4rem; }
+
+.dato1 ul {
+  color: #dfcc21;
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  justify-content: space-around; }
+  .dato1 ul * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+.dato2 ul {
+  color: white;
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  justify-content: space-around; }
+  .dato2 ul * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }

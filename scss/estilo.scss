@@ -1,59 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Roboto+Flex:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Oswald&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
-@import url(header.scss);
+@import url(_header.scss);
 $colorText: rgb(223, 204, 33);
+
 @mixin fonts {
     font-family: 'Oswald', sans-serif;
     color: $colorText;
 }
-footer{
-    background-color: beige;
+
+@mixin lists {
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+header {
+    nav {
+        ul {
+            li {
+                padding: 15px;
+            }
+        }
+
+
+    }
+}
+
+.presentacion {
+    margin: 20px;
+
+    color: white;
 }
 
 body {
-    background-color: black;
-   
+    background-color: black
 }
 
- 
+.tituloVideo {
+    display: flex;
+    justify-content: center;
 
-
-.titulo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    h1 {
-        font-family: 'Anton', sans-serif;
-        color: $colorText;
-        line-height: 1.5em;
-        text-align: center;
-        font-size: 6rem;
-    }
-
-    ul {
-        list-style-type: none;
-
-        li {
-            display: flex;
-                justify-content: center;
-                text-align: center;
-                
-            a {
-                text-decoration: none;
-                color: black;
-                background: $colorText;
-                padding: 10px;
-                
-                
-
-
-            }
-        }
-    }
 }
 
+.video {
+    display: flex;
+    justify-content: center;
+}
 
 .tituloServicios {
     h1 {
@@ -65,3 +64,29 @@ body {
     }
 }
 
+
+
+.tituloContacto {
+    h1 {
+        color: $colorText;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 4rem;
+    }
+}
+
+.dato1 {
+    ul {
+        color: $colorText;
+        @include lists;
+    }
+
+}
+
+.dato2 {
+    ul {
+        color: white;
+        @include lists
+    }
+}

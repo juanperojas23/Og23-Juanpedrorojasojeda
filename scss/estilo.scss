@@ -1,26 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Roboto+Flex:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Koulen&family=Oswald&family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import url(_header.scss);
 $colorText: rgb(223, 204, 33);
 
-@mixin fonts {
-    font-family: 'Oswald', sans-serif;
-    color: $colorText;
-}
-<<<<<<< HEAD
 
 @mixin lists {
     list-style-type: none;
     display: flex;
     text-align: center;
     justify-content: space-around;
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 header {
     nav {
@@ -31,6 +28,63 @@ header {
         }
 
 
+    }
+}
+
+body {
+
+    background-color: rgb(37, 36, 36);
+}
+
+.card {
+    --bs-card-border-radius: 0;
+    background-color: black;
+    color: white;
+    border-width: 1px;
+    border-color: gray;
+
+    h5 {
+        font-family: 'Be Vietnam Pro', sans-serif;
+    }
+}
+
+/* Index*/
+.img-index {
+    background-image: url(https://images.pexels.com/photos/7626320/pexels-photo-7626320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
+
+    h1 {
+        font-size: 5em;
+        font-family: 'Hammersmith One', sans-serif;
+        color: white;
+
+    }
+
+    h2 {
+        font-family: 'Hammersmith One', sans-serif;
+
+    }
+}
+
+.containerCardIndex {
+    margin: 30px;
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 5rem;
+        color: white;
+        font-family: 'Hammersmith One', sans-serif;
     }
 }
 
@@ -40,88 +94,147 @@ header {
     color: white;
 }
 
-body {
-    background-color: black
-}
+
 
 .tituloVideo {
-    display: flex;
-    justify-content: center;
 
-=======
-
-@mixin lists {
-    list-style-type: none;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-}
-
-header {
-    nav {
-        ul {
-            li {
-                padding: 15px;
-            }
-        }
-
-
-    }
->>>>>>> paginacontacto
-}
-.presentacion{
-    margin: 20px;
-    
+    font-size: 5rem;
     color: white;
-}
-body{
-    background-color: black
-    
+    font-family: 'Hammersmith One', sans-serif;
 }
 
-<<<<<<< HEAD
 .video {
     display: flex;
     justify-content: center;
+    color: white;
 }
 
-=======
-.tituloVideo{
+.contactanos {
+    background-color: white;
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    h3 {
+        font-size: 2.5rem;
+        font-family: 'Hammersmith One', sans-serif;
+    }
+
 }
-.video{
+
+.conoceAOg {
     display: flex;
-    justify-content: center;
+    margin: 30px;
+
+    div {
+        h2 {
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            font-size: 6rem;
+            font-family: 'Hammersmith One', sans-serif;
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-family: 'Hammersmith One', sans-serif;
+            text-align: center;
+        }
+    }
+
+    img {
+        justify-content: flex-end;
+        height: 60%;
+        width: 60%;
+        color: white;
+    }
 }
->>>>>>> paginacontacto
+
+/*Servicios*/
 .tituloServicios {
     h1 {
-        @include fonts;
-        text-align: center;
-        justify-content: center;
+        color: white;
+
         font-size: 6rem;
         margin: 50px;
     }
 }
 
+//Acercade
+.quienesSomos {
+
+    padding: 30px;
+
+    h2 {
+
+        color: white;
+        font-family: 'Hammersmith One', sans-serif;
+        font-size: 4.5rem;
+        font-weight: 700;
 
 
-.tituloContacto {
-    h1 {
-        color: $colorText;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        font-size: 4rem;
     }
+
+    p {
+        text-align: center;
+        color: white;
+    }
+}
+
+.logo-list {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    div{
+        h2{
+            font-family: 'Hammersmith One', sans-serif;
+            font-size: 4rem;
+            font-weight: 500;
+            color: white;
+            font-weight: 600;
+
+        }
+    }
+}
+
+.logo-list img {
+    display: inline-block;
+    max-width: 85%;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+    -webkit-filter: grayscale(100);
+    -moz-filter: grayscale(100);
+    filter: grayscale(100);
+}
+
+.logo-list img:hover {
+    filter: none;
+    transform: scale(1.2);
+    -webkit-filter: none;
+    -moz-filter: none;
+}
+
+.galeria {
+    color: white;
+
+    .titulo {
+        h2 {
+
+            font-family: 'Hammersmith One', sans-serif;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+    }
+}
+
+//Contacto
+
+.div-datos {
+    color: white;
 }
 
 .dato1 {
@@ -136,5 +249,105 @@ body{
     ul {
         color: white;
         @include lists
+    }
+}
+
+
+
+
+/*mediaquerys*/
+@media (max-width: 576px) {
+
+    .img-index {
+        background-image: url(https://images.pexels.com/photos/976863/pexels-photo-976863.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h1 {
+            color: white;
+            font-size: 3rem;
+        }
+
+
+    }
+
+
+
+    .conoceAOg {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+
+        div {
+            h2 {
+                text-align: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                font-size: 3rem;
+                font-family: 'Hammersmith One', sans-serif;
+                color: white;
+                font-weight: 600;
+            }
+
+            p {
+                color: white;
+                font-family: 'Hammersmith One', sans-serif;
+                text-align: center;
+            }
+        }
+
+        img {
+
+            width: 500px;
+        }
+
+    }
+
+    .contactanos {
+        height: 200px;
+    }
+
+    .tituloServicios {
+        h1 {
+            color: white;
+
+            font-size: 3rem;
+            margin: 50px;
+        }
+    }
+
+    .quienesSomos {
+
+        padding: 15px;
+
+        h2 {
+
+            color: white;
+            font-family: 'Hammersmith One', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+
+
+        }
+
+        p {
+            text-align: center;
+            color: white;
+        }
+    }
+    .logo-list {
+        padding: 20px 0;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        div{
+            h2{
+                font-family: 'Hammersmith One', sans-serif;
+                font-size: 3rem;
+                font-weight: 500;
+                color: white;
+                font-weight: 600;
+    
+            }
+        }
     }
 }
